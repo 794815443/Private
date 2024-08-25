@@ -1,0 +1,6 @@
+framework module Private {
+  umbrella header "Private-umbrella.h"
+
+  export *
+  module * { export * }
+}

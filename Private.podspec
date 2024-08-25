@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Private'
-  s.version          = '0.1.0'
+  s.version          = '0.1.2'
   s.summary          = 'A short description of Private.'
 
 # This description is used to generate tags and improve search results.
@@ -24,8 +24,8 @@ TODO: Add long description of the pod here.
   s.homepage         = 'https://github.com/nick/Private'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'nick' => 'nick.dou@qiffa.com' }
-  s.source           = { :git => 'https://github.com/nick/Private.git', :tag => s.version.to_s }
+  s.author           = { 'nick' => '794815443@qq.com' }
+  s.source           = { :git => 'https://github.com/794815443/Private', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'
