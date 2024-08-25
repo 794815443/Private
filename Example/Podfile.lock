@@ -4,7 +4,7 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - Private (0.1.2)
+  - Private (0.1.3)
 
 DEPENDENCIES:
   - FBSnapshotTestCase
@@ -20,7 +20,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  Private: 34e37d2f36ace6838a378bd485d6b4f5eb645a3e
+  Private: 4460c334fae8794a279a5acd86ff69d631871fa0
 
 PODFILE CHECKSUM: 89e42a58ba7ead34f23ca3eedf686bb92dc9c074
 

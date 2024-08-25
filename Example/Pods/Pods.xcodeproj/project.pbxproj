@@ -704,6 +704,37 @@
 			};
 			name = Release;
 		};
+		63406BC99CD0A31D451D952B02E47F7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B9CDDF77084B2F63FCC3147E6DB1C01 /* Private.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Private/Private-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Private/Private-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Private/Private.modulemap";
+				PRODUCT_MODULE_NAME = Private;
+				PRODUCT_NAME = Private;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		7EE7A78859F657F6BEFC651185B43192 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -796,38 +827,7 @@
 			};
 			name = Debug;
 		};
-		8F95F15A748D18B936CB13C5EE35B141 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6B9CDDF77084B2F63FCC3147E6DB1C01 /* Private.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Private/Private-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Private/Private-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Private/Private.modulemap";
-				PRODUCT_MODULE_NAME = Private;
-				PRODUCT_NAME = Private;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		BD6EF66553C60D55C4306CA3E9F524CB /* Release */ = {
+		BF66D918E8775DEFF2D6EDF7E053A9E3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0B304E62594A73CB3DA5865427EE99D0 /* Private.release.xcconfig */;
 			buildSettings = {
@@ -843,7 +843,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/Private/Private-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Private/Private-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Private/Private.modulemap";
 				PRODUCT_MODULE_NAME = Private;
@@ -1024,8 +1024,8 @@
 		EB722927CA4C7B30E55A4543CF9E8220 /* Build configuration list for PBXNativeTarget "Private" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8F95F15A748D18B936CB13C5EE35B141 /* Debug */,
-				BD6EF66553C60D55C4306CA3E9F524CB /* Release */,
+				63406BC99CD0A31D451D952B02E47F7C /* Debug */,
+				BF66D918E8775DEFF2D6EDF7E053A9E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
