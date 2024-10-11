@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "SPImageTool.h"
 
 FOUNDATION_EXPORT double PrivateVersionNumber;
 FOUNDATION_EXPORT const unsigned char PrivateVersionString[];

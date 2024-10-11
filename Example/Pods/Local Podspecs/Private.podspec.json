@@ -1,9 +1,9 @@
 {
   "name": "Private",
-  "version": "0.1.3",
-  "summary": "A short description of Private.",
-  "description": "23423423423423423423423sfsdfdsfdsfdsfdsfds42342342",
-  "homepage": "https://github.com/794815443/Private",
+  "version": "0.2.1",
+  "summary": "A short description of Private222.",
+  "description": "ni hao",
+  "homepage": "https://github.com/794815443/Private.git",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +12,39 @@
     "nick": "794815443@qq.com"
   },
   "source": {
-    "git": "https://github.com/794815443/Private",
-    "tag": "0.1.3"
+    "git": "https://github.com/794815443/Private.git",
+    "tag": "0.2.1"
   },
   "platforms": {
     "ios": "12.0"
   },
-  "source_files": "Private/Classes/**/*"
+  "source_files": "Private/Classes/**/*",
+  "ios": {
+    "vendored_frameworks": "Private/libs/opencv2.framework"
+  },
+  "frameworks": [
+    "Accelerate",
+    "AssetsLibrary",
+    "AVFoundation",
+    "CoreGraphics",
+    "CoreImage",
+    "CoreMedia",
+    "CoreVideo",
+    "Foundation",
+    "QuartzCore",
+    "UIKit"
+  ],
+  "pod_target_xcconfig": {
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
+  },
+  "libraries": [
+    "sqlite3",
+    "z",
+    "c++",
+    "stdc++"
+  ],
+  "xcconfig": {
+    "CLANG_CXX_LANGUAGE_STANDARD": "c++11",
+    "CLANG_CXX_LIBRARY": "libc++"
+  }
 }

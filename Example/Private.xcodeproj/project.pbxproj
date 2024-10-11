@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		003B4E75A43D1E7510F9A67C /* Pods_Private_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2439085FB99D955B927F7A8B /* Pods_Private_Tests.framework */; };
+		1CEC4AFA2C7CE711008C05E4 /* DPFather.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CEC4AF92C7CE711008C05E4 /* DPFather.m */; };
+		1CEC4AFD2C7CE727008C05E4 /* DPSon.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CEC4AFC2C7CE727008C05E4 /* DPSon.m */; };
 		3504C06EE19411E4E45A3180 /* Pods_Private_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 370F0E3C45E9EFF5019B4FBA /* Pods_Private_Example.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -37,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1CEC4AF82C7CE711008C05E4 /* DPFather.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPFather.h; sourceTree = "<group>"; };
+		1CEC4AF92C7CE711008C05E4 /* DPFather.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPFather.m; sourceTree = "<group>"; };
+		1CEC4AFB2C7CE727008C05E4 /* DPSon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPSon.h; sourceTree = "<group>"; };
+		1CEC4AFC2C7CE727008C05E4 /* DPSon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPSon.m; sourceTree = "<group>"; };
 		2439085FB99D955B927F7A8B /* Pods_Private_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Private_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		370F0E3C45E9EFF5019B4FBA /* Pods_Private_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Private_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* Private_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Private_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -137,6 +143,10 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* DPViewController.h */,
 				6003F5A6195388D20070C39A /* DPViewController.m */,
+				1CEC4AFB2C7CE727008C05E4 /* DPSon.h */,
+				1CEC4AFC2C7CE727008C05E4 /* DPSon.m */,
+				1CEC4AF82C7CE711008C05E4 /* DPFather.h */,
+				1CEC4AF92C7CE711008C05E4 /* DPFather.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -248,6 +258,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = nick;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = Q8LTS84VQ9;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -384,8 +397,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* DPAppDelegate.m in Sources */,
+				1CEC4AFD2C7CE727008C05E4 /* DPSon.m in Sources */,
 				6003F5A7195388D20070C39A /* DPViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				1CEC4AFA2C7CE711008C05E4 /* DPFather.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,11 +528,43 @@
 			baseConfigurationReference = CB8310C7721B9E0C898E5A8D /* Pods-Private_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Q8LTS84VQ9;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Private/Private-Prefix.pch";
 				INFOPLIST_FILE = "Private/Private-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MODULE_NAME = ExampleApp;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"c++\"",
+					"-l\"sqlite3\"",
+					"-l\"stdc++\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"AssetsLibrary\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreImage\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreVideo\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"Private\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"UIKit\"",
+					"-lc++",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -530,11 +577,43 @@
 			baseConfigurationReference = 92A6E271DE6BDA31CB159E10 /* Pods-Private_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Q8LTS84VQ9;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Private/Private-Prefix.pch";
 				INFOPLIST_FILE = "Private/Private-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MODULE_NAME = ExampleApp;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"c++\"",
+					"-l\"sqlite3\"",
+					"-l\"stdc++\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"AssetsLibrary\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreImage\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreVideo\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"Private\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"UIKit\"",
+					"-lc++",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
